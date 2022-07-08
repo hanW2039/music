@@ -19,7 +19,7 @@ RUN mvn -s /app/settings.xml -f /app/pom.xml clean package
 FROM alpine:3.13
 
 ENV   MYSQL_HOST 10.0.224.11
-ENV   MYSQL_USERNAME music
+ENV   MYSQL_USER_NAME music
 ENV   MYSQL_PASSWORD WangHan2039
 ENV   DATABASE_NAME waterfull
 # 容器默认时区为UTC，如需使用上海时间请启用以下时区设置命令

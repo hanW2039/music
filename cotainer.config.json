@@ -6,7 +6,16 @@
   "mem": 1,
   "policyType": "cpu",
   "policyThreshold": 60,
-
+  "policyDetails": [
+    {
+      "PolicyType": "cpu",
+      "PolicyThreshold": 50
+    },
+    {
+      "PolicyType": "mem",
+      "PolicyThreshold": 50
+    }
+  ],
   "envParams": {},
   "customLogs": "stdout",
   "dataBaseName":"waterfull",

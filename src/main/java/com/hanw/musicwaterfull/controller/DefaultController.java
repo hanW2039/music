@@ -13,9 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 //@Controller 注解是专门用于处理 Http 请求处理的，是以 MVC 为核心的设计思想的控制层。@RestController 则是 @Controller 的衍生注解。
 @RestController
-@RequestMapping( "/hello")
+//@RequestMapping( "/hello")
 public class DefaultController {
-    @GetMapping
+//    @GetMapping
+    @RequestMapping("/")
     public String sayHello(){
         return "王涵";
     }
